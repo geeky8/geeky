@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+#header{
+    z-index: 10;
+    color: #fff;
+    position: fixed;
+    height: 80px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+    padding: 40px 100px;
+    z-index: 100000;
+    background-color: #000000;
+    background-image: linear-gradient(147deg, #000000 0%, #2c3e50 74%);
+}
+#header.sticky{
+    padding: 5px 100px;
+    background: #fff;
+}
+#header .logo{
+    position: relative;
+    font-weight: 700;
+    top: 55px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.6s;
+
+}
+
+#header .headerul{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#header .headerul .headerli{
+    position: relative;
+    list-style: none;
+}
+#header .headerul .headerli .nav-link-header{
+    position: relative;
+    margin: 0 15px;
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 2px;
+    font-weight: 500px;
+    transition: 0.6s;
+}
+#header.sticky .logo,
+#header.sticky .headerul .headerli .nav-link-header{
+    font-weight: 900;
+    color: #000;
+}
+.banner{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
